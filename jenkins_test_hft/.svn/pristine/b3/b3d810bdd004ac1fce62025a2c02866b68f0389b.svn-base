@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.78" errors="0" skipped="0" tests="1" name="org.sonatype.mavenbook.weather.yahoo.WeatherFormatterTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="24.0-b45"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather"/>
+    <property name="java.runtime.version" value="1.7.0_40-ea-b26"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/surefire/surefirebooter6770455159588804031.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/tn/3cz81m4d26b__mk8753p90ph0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/frankholzwarth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="surefire.test.class.path" value="/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/test-classes:/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/classes:/Users/frankholzwarth/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar:/Users/frankholzwarth/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/frankholzwarth/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/frankholzwarth/.m2/repository/jaxen/jaxen/1.1.1/jaxen-1.1.1.jar:/Users/frankholzwarth/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar:/Users/frankholzwarth/.m2/repository/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar:/Users/frankholzwarth/.m2/repository/xom/xom/1.0/xom-1.0.jar:/Users/frankholzwarth/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/Users/frankholzwarth/.m2/repository/xalan/xalan/2.6.0/xalan-2.6.0.jar:/Users/frankholzwarth/.m2/repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar:/Users/frankholzwarth/.m2/repository/velocity/velocity/1.5/velocity-1.5.jar:/Users/frankholzwarth/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/Users/frankholzwarth/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar:/Users/frankholzwarth/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/frankholzwarth/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/frankholzwarth/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.8.5"/>
+    <property name="user.home" value="/Users/frankholzwarth"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="frankholzwarth"/>
+    <property name="java.class.path" value="/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/test-classes:/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/classes:/Users/frankholzwarth/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar:/Users/frankholzwarth/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/frankholzwarth/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/frankholzwarth/.m2/repository/jaxen/jaxen/1.1.1/jaxen-1.1.1.jar:/Users/frankholzwarth/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar:/Users/frankholzwarth/.m2/repository/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar:/Users/frankholzwarth/.m2/repository/xom/xom/1.0/xom-1.0.jar:/Users/frankholzwarth/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/Users/frankholzwarth/.m2/repository/xalan/xalan/2.6.0/xalan-2.6.0.jar:/Users/frankholzwarth/.m2/repository/com/ibm/icu/icu4j/2.6.1/icu4j-2.6.1.jar:/Users/frankholzwarth/.m2/repository/velocity/velocity/1.5/velocity-1.5.jar:/Users/frankholzwarth/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/Users/frankholzwarth/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar:/Users/frankholzwarth/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/frankholzwarth/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/frankholzwarth/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="/Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/surefire/surefirebooter6770455159588804031.jar /Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/surefire/surefire5643232325350393373tmp /Users/frankholzwarth/Downloads/mvnexbook-examples-1.0/ch-multi/simple-parent/simple-weather/target/surefire/surefire5979782586339038898tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="de"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_40-ea"/>
+    <property name="java.ext.dirs" value="/Users/frankholzwarth/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="/Users/frankholzwarth/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.769" classname="org.sonatype.mavenbook.weather.yahoo.WeatherFormatterTest" name="testFormat"/>
+</testsuite>

@@ -1,0 +1,19 @@
+sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf8
+sonar.jdbc.username=sonar
+sonar.jdbc.password=sonar
+sonar.projectKey=org.codehaus.sonar:testProjectCombined
+sonar.projectName=Java analyzer Combined
+sonar.projectVersion=1.0
+sonar.language=java
+sonar.sources=src
+
+sonar.cobertura.reportPath=coverage.xml
+
+sonar.modules=module-output,module-input
+module-output.sonar.projectName=Module Output
+module-output.sonar.sources=src
+module-output.sonar.projectBaseDir=java/Output
+
+module-input.sonar.projectName=Module Input
+module-input.sonar.sources=src
+module-input.sonar.projectBaseDir=java/Input

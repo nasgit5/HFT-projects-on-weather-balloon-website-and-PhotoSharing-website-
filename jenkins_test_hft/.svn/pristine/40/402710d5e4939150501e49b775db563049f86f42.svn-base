@@ -1,0 +1,37 @@
+<project name="Ant Suit" default="all" basedir="." xmlns:sonar="antlib:org.sonar.ant">
+
+  
+  <!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
+  <property name="sonar.jdbc.url" value="jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf8" />
+  <property name="sonar.jdbc.username" value="sonar" />
+  <property name="sonar.jdbc.password" value="sonar" />
+
+ 
+  <!-- Define the SonarQube project properties -->
+  <property name="sonar.projectKey" value="org.codehaus.sonar:example-java-ant" />
+  <property name="sonar.projectName" value="Simple Java Project analyzed with the SonarQube Ant Task" />
+  <property name="sonar.projectVersion" value="1.0" />
+  <property name="sonar.language" value="java" />
+  <property name="sonar.sources" value="src" />
+  <property name="sonar.binaries" value="build/*.jar" />
+
+  <target name="all">
+	  <ant antfile="java/Output/Build.xml" inheritall="false" />
+	  <ant antfile="java/Input/Build.xml" inheritall="false" />
+	  <echo>Test finished</echo>
+  </target>
+
+  <!-- Define the SonarQube target -->
+  <target name="sonar">
+      <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+          <!-- Update the following line, or put the "sonar-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+          <classpath path="path/to/sonar/ant/task/lib/sonar-ant-task-*.jar" />
+      </taskdef>
+ 
+      <!-- Execute Sonar -->
+      <sonar:sonar />
+  </target>
+  
+  
+</project>
+

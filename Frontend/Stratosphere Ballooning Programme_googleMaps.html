@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stratosphere Ballooning Programme</title>    
+	<meta charset="utf-8">
+	<meta name="Description" content="Stratosphere Ballooning Programme of HfT Stuttgart" />
+	<script src="JS/config.js"></script>
+	
+	<!-- load all APIs and stylesheets-->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+	<script src="LIB/jQRangeSlider-5.5.0/jQDateRangeSlider-min.js"></script>
+	<link rel="stylesheet" href="LIB/jQRangeSlider-5.5.0/css/iThing.css" type="text/css" />
+	
+	<!-- load all scripts-->
+	<script type="text/javascript" src="JS/serverCommunication.js"></script>
+	<script type="text/javascript" src="JS/charts.js"></script>
+	<script type="text/javascript" src="JS/map.js"></script>
+	<script type="text/javascript" src="JS/telemetry.js"></script>
+	<script type="text/javascript" src="JS/timeScroller.js"></script>
+	<script type="text/javascript" src="JS/gallery.js"></script>
+	
+	<!-- Server connection -->
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		console.log("Document.ready");
+		//Insert Node.js script based on server url
+		$.getScript(SERVER_BASE_URL+'/socket.io/socket.io.js',function( data, textStatus, jqxhr ){
+			console.log('Load node.js connector: ' + textStatus);
+			
+			//Connect to Server
+			SERVER_CONNECTOR.connect();		
+		});
+	});
+	</script>	 
+	
+	<!-- Show loading image while objects are loaded -->
+	<script type="text/javascript">
+	function showLoaders()
+	{
+		var src='';
+		src+='<div style="text-align:center; vertical-align:middle;width:100%;height:100%;">';
+		src+='<img src="IMG/ajax-loader.gif">';
+		src+='</div>';
+		$(".loading").html(src);
+	}
+	$(document).ready(showLoaders);
+	</script>
+	
+	</head>
+
+	<body>
+		<div id="header" class="floatingbox">
+			<img src="IMG/Mission Badge_small.png" id="logo" alt="HFT Ballooning logo">
+			<div>
+				<h1>HFT Stratosphere Ballooning Programme</h1>
+				<h2>Hochschule für Technik Stuttgart</h2>
+			</div>  
+		</div>
+		
+		<div id="content">
+			<div id='col1'>
+			<div id='about' class="floatingbox">
+				<h2>About</h2>
+				<div>This Webpage shows the Frontend of the Student Ballooning Project of the HFT Stuttgart, where a weather balloon will be launched to the stratosphere, which measures several telemetry data as well as video footage during the flight. It displays all balloon data while the flight and also provides some video footage from ground as well as from flight after balloon has landed. You are also able to choose a timespan, which limits the displayed data to its bounds.</div>
+			</div>
+			
+				<div class="floatingbox" id="positionDiv">
+					<h2>Current Balloon Position</h2>
+					<div id="map_canvas"></div>
+					<div id="chart_altitude" class="chart loading"></div> 
+				</div>
+			
+				<div class="floatingbox">
+					<h2>Choose Timespan:</h2>
+					<div id="time_slider"></div>
+				</div>
+			
+				<div class="floatingbox" align="center">
+					<h2 align="left">Charts</h2>
+					<div id="chart_temp" class="chart loading"></div>
+					<div id="chart_pressure" class="chart loading"></div>
+					<div id="chart_humidity" class="chart loading"></div>
+				</div> 
+				
+			</div>
+				
+			<div id='col2'>	
+				<div id="telemetry" class="floatingbox">
+					<h3>Live Telemetry</h3>
+					<div>
+						<div class="datarow"><span id="last_update">Last update: -</span></div>
+						<div class="datarow"><label class="datalabel">Pressure: </label><span id="pressure_table"></span><span> hPa</span></div>
+						<div class="datarow"><label class="datalabel">Temperature: </label><span id="temperature_table"> </span><span> &deg;C</span></div>
+						<div class="datarow"><label class="datalabel">Humidity: </label><span id="humidity_table"></span><span> %</span></div> 
+						<div class="datarow"><label class="datalabel">Position: </label><span id="longitude_table"> </span><span> N</span>, <span id="latitude_table"> </span><span> E</span></div>
+						<div class="datarow"><label class="datalabel">GPS Altitude: </label><span id="altitude_table"></span><span> m</span></div>
+						<div class="datarow"><label class="datalabel">Barom. Altitude: </label><span id="altitudeBaro_table"></span><span> m</span></div>
+						<div class="datarow"><label class="datalabel">h.Velocity: </label><span id="hVelocity_table"></span><span> km/h</span></div>
+						<div class="datarow"><label class="datalabel">v.Velocity: </label><span id="vVelocity_table"></span><span> km/h</span></div>
+						<div class="datarow"><label class="datalabel">d.Velocity: </label><span id="dVelocity_table"></span><span> km/h</span></div>
+						<div class="datarow"><label class="datalabel">Passed Distance: </label><span id="distance_table"></span><span> km</span></div>
+						<div class="datarow"><label class="datalabel">Passed Distance Abs: </label><span id="distanceAbs_table"></span><span> km</span></div>
+					</div>
+				</div>
+				
+				<div class="floatingbox">	
+					<a class="twitter-timeline" width="205" height="388" href="https://twitter.com/HFTBallooning" data-widget-id="397377068733722626">Tweets by @HFTBallooning</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div> 
+				
+				<div id = "videoBox" class="floatingbox" >
+					<h3>Media</h3>
+				</div>				
+					
+				<div class="floatingbox">
+					<div id="wettercom-button-125aae2ca3cedef12eee60fac5cd5ec5">
+						<link id="wettercom-css" href="http://www.wetter.com/css/woys3.1.css?61117,125aae2ca3cedef12eee60fac5cd5ec5" rel="stylesheet" type="text/css" />
+						<div id="wettercom-title">
+							<a id="wettercom-citylink" href="http://www.wetter.com/wetter_aktuell/wettervorhersage/3_tagesvorhersage/?id=DE0010287" title="Weather Stuttgart" style="text-color=white !important;" target="_blank">Weather Stuttgart</a>
+						</div>
+						<div id="wettercom-woys-125aae2ca3cedef12eee60fac5cd5ec5"></div>
+						<div id="wettercom-brand">
+							<a id="wettercom-link" href="http://www.wetter.com" target="_blank">
+								<span id="wettercom-more">more weather at </span>
+								<img id="wettercom-logo" src="http://www.wetter.com/img/websitetools/woys/logo.png" alt="wetter.com" title="wetter.com" />
+							</a>
+						</div>  <div id="wettercom-clear">
+							<script type="text/javascript" src="http://www.wetter.com/js/woys3.1.js?61117,125aae2ca3cedef12eee60fac5cd5ec5"></script>
+						</div>
+					</div>
+				</div>	
+				
+				<div id="hardware_status" class="floatingbox">
+					<h3>Hardware Status</h3>
+					<div class="datarow"><label class="datalabel">Inner Temperature: </label><span id="innertemperature_table"></span><span> &deg;C</span></div>
+					<div class="datarow"><label class="datalabel">Battery: </label><span id="battery_table"></span><span> %</span></div>
+				</div>	
+					
+			</div>		
+	</div>
+	
+</body>
+
+</html>

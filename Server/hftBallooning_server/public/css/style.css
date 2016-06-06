@@ -1,0 +1,170 @@
+body
+{
+	background-attachment: fixed;
+	background-color: black;
+	background-image: url(../IMG/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: black;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	margin: 0;
+}
+h1,h2,h3,h4
+{
+	color: white;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	margin-bottom: 0px;
+	margin-bottom: 5px !important;
+	margin-top: 5px !important;
+	padding-bottom: 0px;
+}
+#header h1, #header h2, #header div
+{
+	display: inline-block;
+}
+#header h2
+{
+	color: #afAFAF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+#header
+{
+	background-color: black;
+	height: 95px;
+	margin-top: 0px;
+	padding: 5px;
+	position: fixed;
+	text-align: left;
+	width: 100%;
+	z-index: 10;
+}
+#logo
+{
+	height: 125px;
+	margin-right: 2em;
+	vertical-align: middle;
+}
+#about
+{
+	display: inline-block;
+}
+#positionDiv
+{
+	overflow: auto;
+}
+.floatingbox 
+{
+	margin:5px;
+	padding:5px;
+	background-color: white;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    background-color:rgba(255,255,255,0.8);
+}
+#last_update
+{
+	color: #666;
+}
+#content
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 115px;
+}
+#telemetry span
+{
+	font-family: "Courier New",Courier, sans-serif;
+}
+#hardware_status span
+{
+	font-family: "Courier New",Courier, sans-serif;
+}
+#hardware_status
+{
+	font-size: 95%;
+}
+#map_canvas
+{
+	float: left;
+	height: 480px;
+	width: calc(100% - 160px);
+}
+.chart
+{
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+.datalabel
+{
+	color: #666;
+}
+#about
+{
+	display: inline-block;
+}
+#telemetry
+{
+	font-size: 95%;
+	height: 220px;
+}
+#chart_altitude
+{
+	background-image: url(../IMG/altitudeBackgroundFixed.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	float: left;
+	height: 450px;
+	margin-left: 10px;
+	margin-top: 40px;
+	width: 150px;
+}
+#time_slider
+{
+	margin-bottom: 25px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#videoBox
+{
+	height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#col1
+{
+	float: left;
+	margin: 0px;
+	width: calc(100% - 250px);
+}
+#col2
+{
+	float: left;
+	margin: 0px;
+	width: 220px;
+}
+@media (max-width: 500px)
+{
+	#col1
+	{
+		float: none;
+		width: 100%;
+	}
+	#col2
+	{
+		float: none;
+		width: 100%;
+	}
+	#header h1, #header h2
+	{
+		font-size: 0px;
+	}
+	#logo
+	{
+		height: 100px;
+		margin-right: 2em;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "name": "HFT-Ballooning",
+  "description": "HFT-Ballooning Server Application",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "sqlite3": "~2.1.19"
+  }
+}

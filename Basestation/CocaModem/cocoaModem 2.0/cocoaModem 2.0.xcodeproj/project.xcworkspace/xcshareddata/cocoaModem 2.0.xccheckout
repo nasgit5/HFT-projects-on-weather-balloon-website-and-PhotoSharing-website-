@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90D0D6A3-DF5C-44DF-B3DA-77A09D38AA9F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cocoaModem 2.0</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19DC45A2-6250-4BDB-9BB2-82D50793EFD1</key>
+		<string>https://dev.goroot.de/swp2/svn/branches/kolbm_basestation</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Basestation/CocaModem/cocoaModem 2.0/cocoaModem 2.0.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19DC45A2-6250-4BDB-9BB2-82D50793EFD1</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>19DC45A2-6250-4BDB-9BB2-82D50793EFD1</key>
+		<string>https://dev.goroot.de/swp2/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://dev.goroot.de/swp2/svn/branches/kolbm_basestation/Basestation/CocaModem/cocoaModem%202.0/cocoaModem%202.0.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19DC45A2-6250-4BDB-9BB2-82D50793EFD1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19DC45A2-6250-4BDB-9BB2-82D50793EFD1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kolbm_basestation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

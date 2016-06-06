@@ -1,0 +1,177 @@
+// !$*UTF8*$!
+{
+	256AC3D80F4B6AC300CF3369 /* AppleScript_TestsAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {752, 520}}";
+			sepNavSelRange = "{261, 0}";
+			sepNavVisRange = "{0, 269}";
+		};
+	};
+	256AC3D90F4B6AC300CF3369 /* AppleScript_TestsAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {752, 520}}";
+			sepNavSelRange = "{590, 0}";
+			sepNavVisRange = "{0, 919}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 846EDFA812A8B257008328F8 /* AppleScript Tests */;
+		activeTarget = 8D1107260486CEB800E47090 /* AppleScript Tests */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* AppleScript Tests */,
+		);
+		codeSenseManager = 846EDFB812A8B25D008328F8 /* Code sense */;
+		executables = (
+			846EDFA812A8B257008328F8 /* AppleScript Tests */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					574,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					534,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 313045591;
+			PBXWorkspaceStateSaveDate = 313045591;
+		};
+		perUserProjectItems = {
+			846EE02812A8BC5C008328F8 /* PBXTextBookmark */ = 846EE02812A8BC5C008328F8 /* PBXTextBookmark */;
+			846EE02912A8BC5C008328F8 /* PlistBookmark */ = 846EE02912A8BC5C008328F8 /* PlistBookmark */;
+			846EE02A12A8BC5C008328F8 /* PBXTextBookmark */ = 846EE02A12A8BC5C008328F8 /* PBXTextBookmark */;
+			846EE02B12A8BC5C008328F8 /* PBXTextBookmark */ = 846EE02B12A8BC5C008328F8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 846EDFB712A8B25D008328F8 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	846EDFA812A8B257008328F8 /* AppleScript Tests */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "AppleScript Tests";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	846EDFB712A8B25D008328F8 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	846EDFB812A8B25D008328F8 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	846EE02812A8BC5C008328F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* AppleScript_TestsAppDelegate.h */;
+		name = "AppleScript_TestsAppDelegate.h: 12";
+		rLen = 0;
+		rLoc = 261;
+		rType = 0;
+		vrLen = 269;
+		vrLoc = 0;
+	};
+	846EE02912A8BC5C008328F8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* AppleScript_Tests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/kchen/Local/Projects/cocoaModem 2.0/AppleScript Tests/AppleScript_Tests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	846EE02A12A8BC5C008328F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* AppleScript_TestsAppDelegate.m */;
+		name = "AppleScript_TestsAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 321;
+		vrLoc = 0;
+	};
+	846EE02B12A8BC5C008328F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* AppleScript_TestsAppDelegate.m */;
+		name = "AppleScript_TestsAppDelegate.m: 26";
+		rLen = 0;
+		rLoc = 590;
+		rType = 0;
+		vrLen = 919;
+		vrLoc = 0;
+	};
+	8D1107260486CEB800E47090 /* AppleScript Tests */ = {
+		activeExec = 0;
+		executables = (
+			846EDFA812A8B257008328F8 /* AppleScript Tests */,
+		);
+	};
+}
